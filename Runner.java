@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Runner {
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("Welcome to ODUM'S MISSING COFFEE");
+		System.out.println("Type (1) to begin and type (2) to end");
+		
+		int a = input.nextInt();
+		System.out.println(" ");
+		
+		part1 part = new part1();
+		
+		if(a == 1) {
+			part.partone();
+		}
+		
+		else if(a == 2) {
+			part.part1v2();
+		}
+	}
+}
